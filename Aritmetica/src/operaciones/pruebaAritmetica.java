@@ -2,17 +2,16 @@ package operaciones;
 
 public class pruebaAritmetica {
     public static void main(String[] args) {
-        Aritmetica aritmetica1 = new Aritmetica();
-        aritmetica1.a =3;
-        aritmetica1.b =2;
-        aritmetica1.sumar();
+       Aritmetica aritmetica1 = new Aritmetica();
+        System.out.println("Aritmetica1.a:  = " + aritmetica1.a );
+        System.out.println("Aritmetica1.b = " + aritmetica1.b);
         
-        int resultado = aritmetica1.sumarConRetorno();
-        System.out.println("resultado desde la clase de prueba = " + resultado);
-        
-        resultado = aritmetica1.sumarConArgumentos(5, 9);
-        System.out.println(" Resultado usando argumentos = " +  resultado);
+        Aritmetica aritmetica2 = new Aritmetica(5, 8);
+            System.out.println ("aritmetica = " + aritmetica2.a);
+            System.out.println("aritmetica2 = " + aritmetica2.b);
+            
+        }
         
     }
     
-}
+
